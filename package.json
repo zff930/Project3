@@ -1,0 +1,13 @@
+{
+  "name": "restaurant-menus",
+  "version": "1.0.0",
+  "description": "Ohmyfood is an online food ordering company where users can compose their own menu and reduce waiting time in restaurants. Initially developed in New York, we now want to extend our concept to Paris. As of right now, we got menus from four great Parisian restaurants and need to design the corresponding site for each of them.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css --style expanded",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
