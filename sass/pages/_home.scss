@@ -153,6 +153,11 @@ body {
                 height: 170px;
                 border-radius: 1em 1em 0 0;
                 object-fit: cover;
+                object-position: 50% 100%;
+            }
+
+            .enchanted-img {
+                object-position: 50% 60%;
             }
 
             .label {
@@ -206,19 +211,19 @@ body {
 
 footer {
     background-color: #353535;
-    padding: 20px 20px 30px 20px;
+    padding: 10px 20px 30px 25px;
 
-    img {
+    h2 {
+        font-family: "Shrikhand", serif;
+        font-size: 18px;
         color: #FEFEFE;
-        width: 105px;
-        height: 20px;
     }
 
     .links {
         list-style-type: none;
-        padding: 10px 20px 0px 0px;
+        padding: 0px 20px 0px 0px;
         margin: 0;
-        line-height: 150%;
+        line-height: 160%;
 
         .link {
             i {

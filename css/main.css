@@ -138,6 +138,10 @@ body {
   height: 170px;
   border-radius: 1em 1em 0 0;
   object-fit: cover;
+  object-position: 50% 100%;
+}
+.restaurants__wrap .card .enchanted-img {
+  object-position: 50% 60%;
 }
 .restaurants__wrap .card .label {
   width: 75px;
@@ -181,18 +185,18 @@ body {
 
 footer {
   background-color: #353535;
-  padding: 20px 20px 30px 20px;
+  padding: 10px 20px 30px 25px;
 }
-footer img {
+footer h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
   color: #FEFEFE;
-  width: 105px;
-  height: 20px;
 }
 footer .links {
   list-style-type: none;
-  padding: 10px 20px 0px 0px;
+  padding: 0px 20px 0px 0px;
   margin: 0;
-  line-height: 150%;
+  line-height: 160%;
 }
 footer .links .link i {
   width: 20px;
