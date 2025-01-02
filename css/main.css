@@ -178,9 +178,30 @@ body {
   position: absolute;
   bottom: 30px;
   right: 25px;
+  z-index: 1;
 }
 .restaurants__wrap .card .like-icon .fa-heart {
   font-size: 22px;
+}
+.restaurants__wrap .card .like-icon .fa-regular:hover {
+  cursor: pointer;
+  color: transparent;
+}
+.restaurants__wrap .card .like-icon .fa-regular:hover + .fa-solid {
+  opacity: 1;
+}
+.restaurants__wrap .card .like-icon .fa-solid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(225deg, #9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 100ms;
 }
 
 footer {
