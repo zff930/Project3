@@ -143,6 +143,7 @@ body {
 
         .card {
             background-color: #FEFEFE;
+            color: black;
             height: 245px;
             border-radius: 1em;
             box-shadow: 5px 5px 7px #d6d3d3;
@@ -200,19 +201,13 @@ body {
                 position: absolute;
                 bottom: 30px;
                 right: 25px;
-                z-index: 1;
 
                 .fa-heart {
                     font-size: 22px;
                 }
 
-                .fa-regular:hover {
-                    cursor: pointer;
-                    color: transparent;
-
-                    & + .fa-solid {
-                        opacity: 1;
-                    }
+                .fa-solid:hover {
+                    opacity: 1;
                 }
 
                 .fa-solid {
@@ -225,8 +220,7 @@ body {
                     background-clip: text;
                     color: transparent;
                     opacity: 0;
-                    z-index: -1;
-                    transition: opacity 100ms;
+                    transition: opacity 500ms;
                 }
             }
         }
