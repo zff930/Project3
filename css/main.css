@@ -180,13 +180,13 @@ body {
   bottom: 30px;
   right: 25px;
 }
-.restaurants__wrap .card .like-icon .fa-heart {
+.restaurants__wrap .card .like-icon .heart {
   font-size: 22px;
 }
-.restaurants__wrap .card .like-icon .fa-solid:hover {
+.restaurants__wrap .card .like-icon .solid-heart:hover {
   opacity: 1;
 }
-.restaurants__wrap .card .like-icon .fa-solid {
+.restaurants__wrap .card .like-icon .solid-heart {
   position: absolute;
   top: 0;
   right: 0;
