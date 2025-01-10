@@ -81,8 +81,9 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .procedures {
-    width: 960px;
-    margin: 30px auto 60px auto;
+    row-gap: 30px;
+    width: 980px;
+    margin: 30px auto 50px auto;
   }
 }
 .procedures h2 {
@@ -91,7 +92,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .procedures h2 {
-    padding-left: -1px;
+    margin-bottom: 0px;
   }
 }
 .procedures__container {
@@ -103,7 +104,7 @@ body {
 @media screen and (min-width: 1024px) {
   .procedures__container {
     flex-direction: row;
-    column-gap: 30px;
+    column-gap: 35px;
     justify-content: flex-end;
   }
 }
@@ -161,9 +162,22 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding-bottom: 30px;
+  }
+}
 .restaurants h2 {
   font-size: 24px;
   padding-right: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants h2 {
+    padding-right: 850px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 .restaurants__wrap {
   display: flex;
@@ -177,7 +191,7 @@ body {
     flex-wrap: wrap;
     column-gap: 80px;
     row-gap: 50px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .restaurants__wrap .card {
@@ -192,17 +206,28 @@ body {
 @media screen and (min-width: 1024px) {
   .restaurants__wrap .card {
     width: 450px;
+    height: 225px;
   }
 }
 .restaurants__wrap .card img {
   width: 100%;
-  height: 170px;
+  height: 69%;
   border-radius: 1em 1em 0 0;
   object-fit: cover;
   object-position: 50% 100%;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants__wrap .card img {
+    object-position: 50% 70%;
+  }
+}
 .restaurants__wrap .card .enchanted-img {
   object-position: 50% 60%;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__wrap .card .enchanted-img {
+    object-position: 50% 57%;
+  }
 }
 .restaurants__wrap .card .label {
   width: 75px;
@@ -263,16 +288,42 @@ footer {
   background-color: #353535;
   padding: 10px 20px 30px 25px;
 }
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 60px 30px 30px 25px;
+    position: relative;
+  }
+}
 footer h2 {
   font-family: "Shrikhand", serif;
   font-size: 18px;
   color: #FEFEFE;
+}
+@media screen and (min-width: 1024px) {
+  footer h2 {
+    position: absolute;
+    bottom: 13px;
+    right: 60px;
+  }
 }
 footer .links {
   list-style-type: none;
   padding: 0px 20px 0px 0px;
   margin: 0;
   line-height: 160%;
+}
+@media screen and (min-width: 1024px) {
+  footer .links {
+    line-height: 0%;
+    text-align: right;
+    padding-right: 180px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .links .link {
+    display: inline;
+    margin-right: 50px;
+  }
 }
 footer .links .link i {
   width: 20px;
