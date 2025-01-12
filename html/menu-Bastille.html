@@ -3,212 +3,140 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Menu for Bastille</title>
 
     <script src="https://kit.fontawesome.com/b56242c928.js" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" />
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
+            <img class="logo-img" src="../images/logo/ohmyfood.png" alt="ohmyfood" />
+            <div class="back-to-home-icon">
+                <i class="back-to-home fa-solid fa-arrow-left"></i>
+            </div>
         </div>
-
-        <div class="back-to-home-icon">
-            <i class="fa-solid fa-arrow-left"></i>
-        </div>
-
-        <img src="/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille">
+        <img class="bg-img" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille" />
     </header>
 
-    <main>
-        <div class="restaurant-title">
-            <h3>Bastille</h3>
+    <main class="menu">
+        <div class="menu__title">
+            <h1>Bastille</h1>
             <div class="like-icon">
-                <i class="fa-regular fa-heart"></i>
+                <i class="heart fa-regular fa-heart"></i>
+                <i class="heart solid-heart fa-solid fa-heart"></i>
             </div>
         </div>
 
-        <section>
-            <div class="entrees-title">
-                <h5>ENTREES</h5>
-            </div>
-
-            <div class="container">
-                <div class="box">
-                    <div class="entree-details">
-                        <div class="entree-name">
-                            <h5>Citrus Squid Carpaccio</h5>
-                        </div>
-
-                        <div class="entree-ingredient">
-                            <h4>With orange zest</h4>
-                        </div>
+        <section class="menu__section">
+            <h2>ENTREES</h2>
+            <hr>
+            <div class="menu__section__container">
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Citrus Squid Carpaccio</h3>
+                        <p>With orange zest</p>
                     </div>
 
-                    <div class="entree-price">
-                        <h4>25€</h4>
-                    </div>
+                    <div class="price">25€</div>
                 </div>
 
-                <div class="box">
-                    <div class="entree-details">
-                        <div class="entree-name">
-                            <h5>Grandmother's Vegetable Soup</h5>
-                        </div>
-
-                        <div class="entree-ingredient">
-                            <h4>Carrots, parsnips, Jerusalem artichoke</h4>
-                        </div>
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Grandmother's Vegetable Soup</h3>
+                        <p>Carrots, parsnips, Jerusalem artichoke</p>
                     </div>
 
-                    <div class="entree-price">
-                        <h4>35€</h4>
-                    </div>
+                    <div class="price">35€</div>
                 </div>
 
-                <div class="box">
-                    <div class="entree-details">
-                        <div class="entree-name">
-                            <h5>Onion Soup</h5>
-                        </div>
-
-                        <div class="entree-ingredient">
-                            <h4>Revisited</h4>
-                        </div>
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Onion Soup</h3>
+                        <p>Revisited</p>
                     </div>
 
-                    <div class="entree-price">
-                        <h4>20€</h4>
-                    </div>
+                    <div class="price">20€</div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="main-dish-title">
-                <h5>MAIN DISH</h5>
-            </div>
-
-            <div class="container">
-                <div class="box">
-                    <div class="main-dish-details">
-                        <div class="main-dish-name">
-                            <h5>Scallops</h5>
-                        </div>
-
-                        <div class="main-dish-ingredient">
-                            <h4>With mashed parsnip</h4>
-                        </div>
+        <section class="menu__section">
+            <h2>MAIN DISH</h2>
+            <hr>
+            <div class="menu__section__container">
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Scallops</h3>
+                        <p>With mashed parsnip</p>
                     </div>
 
-                    <div class="main-dish-price">
-                        <h4>40€</h4>
-                    </div>
+                    <div class="price">40€</div>
                 </div>
 
-                <div class="box">
-                    <div class="main-dish-details">
-                        <div class="main-dish-name">
-                            <h5>Magret de canard</h5>
-                        </div>
-
-                        <div class="main-dish-ingredient">
-                            <h4>With mashed potatoes</h4>
-                        </div>
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Magret de canard</h3>
+                        <p>With mashed potatoes</p>
                     </div>
 
-                    <div class="main-dish-price">
-                        <h4>35€</h4>
-                    </div>
+                    <div class="price">35€</div>
                 </div>
 
-                <div class="box">
-                    <div class="main-dish-details">
-                        <div class="main-dish-name">
-                            <h5>Game Hen</h5>
-                        </div>
-
-                        <div class="main-dish-ingredient">
-                            <h4>With vegetable gnocchis</h4>
-                        </div>
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Game Hen</h3>
+                        <p>With vegetable gnocchis</p>
                     </div>
 
-                    <div class="main-dish-price">
-                        <h4>44€</h4>
-                    </div>
+                    <div class="price">44€</div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="desserts-title">
-                <h5>DESSERTS</h5>
-            </div>
-
-            <div class="container">
-                <div class="box">
-                    <div class="dessert-details">
-                        <div class="dessert-name">
-                            <h5>Floral Ice Cream</h5>
-                        </div>
-
-                        <div class="dessert-ingredient">
-                            <h4>With hazelnut butter</h4>
-                        </div>
+        <section class="menu__section">
+            <h2>DESSERTS</h2>
+            <hr>
+            <div class="menu__section__container">
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Floral Ice Cream</h3>
+                        <p>With hazelnut butter</p>
                     </div>
 
-                    <div class="dessert-price">
-                        <h4>18€</h4>
-                    </div>
+                    <div class="price">18€</div>
                 </div>
 
-                <div class="box">
-                    <div class="dessert-details">
-                        <div class="dessert-name">
-                            <h5>Chocolate Lava Cake</h5>
-                        </div>
-
-                        <div class="dessert-ingredient">
-                            <h4>Revisited</h4>
-                        </div>
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Revisited</p>
                     </div>
 
-                    <div class="dessert-price">
-                        <h4>22€</h4>
-                    </div>
+                    <div class="price">22€</div>
                 </div>
 
-                <div class="box">
-                    <div class="dessert-details">
-                        <div class="dessert-name">
-                            <h5>Napolean</h5>
-                        </div>
-
-                        <div class="dessert-ingredient">
-                            <h4>With blueberries and marzipan</h4>
-                        </div>
+                <div class="menu__section__container__box">
+                    <div class="details">
+                        <h3>Napolean</h3>
+                        <p>With blueberries and marzipan</p>
                     </div>
 
-                    <div class="dessert-price">
-                        <h4>23€</h4>
-                    </div>
+                    <div class="price">23€</div>
                 </div>
             </div>
         </section>
 
-        <div class="order">
-            <h5>Order</h5>
-        </div>
+        <button class="menu__button">Order</button>
     </main>
 
     <footer>
