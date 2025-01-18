@@ -354,11 +354,10 @@ header .logo .logo-img {
   margin: 20px auto 14px auto;
   width: 165px;
   height: 28px;
-  position: relative;
 }
 header .logo .back-to-home-icon {
   position: absolute;
-  top: 25px;
+  top: 23px;
   left: 20px;
 }
 header .logo .back-to-home-icon .back-to-home {
@@ -371,7 +370,8 @@ header .bg-img {
 }
 
 .menu {
-  border: 1px solid red;
+  position: relative;
+  margin-top: -45px;
   background-color: #f6f6f6;
   border-radius: 3em 3em 0 0;
   padding: 15px 10px 50px 10px;
