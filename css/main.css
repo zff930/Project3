@@ -434,6 +434,7 @@ header .bg-img {
   background-color: #FEFEFE;
   border-radius: 1em;
   padding: 10px 10px;
+  box-shadow: 5px 5px 7px #d6d3d3;
   position: relative;
 }
 .menu__section__container__box .details h3 {
