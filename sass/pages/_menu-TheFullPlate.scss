@@ -14,7 +14,6 @@ header {
             margin: 20px auto 14px auto;
             width: 165px;
             height: 28px;
-            position: relative;
         }
 
         & .back-to-home-icon {
@@ -32,6 +31,10 @@ header {
         width: 100%;
         height: 270px;
         object-fit: cover;
+
+        @include desktop {
+            object-position: 50% 65%;
+        }
     }
 }
 
@@ -39,6 +42,13 @@ header {
     background-color: #f6f6f6;
     border-radius: 3em 3em 0 0;
     padding: 15px 10px 50px 10px;
+
+    @include desktop {
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 
     &__title {
         position: relative;
@@ -48,6 +58,10 @@ header {
             font-size: 28px;
             margin-bottom: 10px;
             margin-left: 10px;
+
+            @include desktop {
+                margin-left: 40px;
+            }
         }
 
         .like-icon {
@@ -74,6 +88,10 @@ header {
                 color: transparent;
                 opacity: 0;
                 transition: opacity 500ms;
+            }
+
+            @include desktop {
+                right: 40px;
             }
         }
     }

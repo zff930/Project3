@@ -400,7 +400,7 @@ header .bg-img {
 }
 @media screen and (min-width: 1024px) {
   .menu__title h1 {
-    margin-left: 125px;
+    margin-left: 40px;
   }
 }
 .menu__title .like-icon {
@@ -428,7 +428,7 @@ header .bg-img {
 }
 @media screen and (min-width: 1024px) {
   .menu__title .like-icon {
-    right: 100px;
+    right: 40px;
   }
 }
 .menu__section {
@@ -608,7 +608,7 @@ header .bg-img {
 }
 @media screen and (min-width: 1024px) {
   .menu__title h1 {
-    margin-left: 80px;
+    margin-left: 40px;
   }
 }
 .menu__title .like-icon {
@@ -636,7 +636,7 @@ header .bg-img {
 }
 @media screen and (min-width: 1024px) {
   .menu__title .like-icon {
-    right: 80px;
+    right: 40px;
   }
 }
 .menu__section {
@@ -772,7 +772,6 @@ header .logo .logo-img {
   margin: 20px auto 14px auto;
   width: 165px;
   height: 28px;
-  position: relative;
 }
 header .logo .back-to-home-icon {
   position: absolute;
@@ -787,11 +786,24 @@ header .bg-img {
   height: 270px;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  header .bg-img {
+    object-position: 50% 65%;
+  }
+}
 
 .menu {
   background-color: #f6f6f6;
   border-radius: 3em 3em 0 0;
   padding: 15px 10px 50px 10px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 .menu__title {
   position: relative;
@@ -799,8 +811,16 @@ header .bg-img {
 .menu__title h1 {
   font-family: "Shrikhand", serif;
   font-size: 28px;
+  text-wrap: wrap;
   margin-bottom: 10px;
   margin-left: 10px;
+  margin-right: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__title h1 {
+    margin-left: 40px;
+    margin-right: 0px;
+  }
 }
 .menu__title .like-icon {
   position: absolute;
@@ -824,6 +844,11 @@ header .bg-img {
   color: transparent;
   opacity: 0;
   transition: opacity 500ms;
+}
+@media screen and (min-width: 1024px) {
+  .menu__title .like-icon {
+    right: 40px;
+  }
 }
 .menu__section {
   padding-top: 5px;
@@ -958,7 +983,6 @@ header .logo .logo-img {
   margin: 20px auto 14px auto;
   width: 165px;
   height: 28px;
-  position: relative;
 }
 header .logo .back-to-home-icon {
   position: absolute;
@@ -973,11 +997,24 @@ header .bg-img {
   height: 270px;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  header .bg-img {
+    object-position: 50% 65%;
+  }
+}
 
 .menu {
   background-color: #f6f6f6;
   border-radius: 3em 3em 0 0;
   padding: 15px 10px 50px 10px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 .menu__title {
   position: relative;
@@ -987,6 +1024,11 @@ header .bg-img {
   font-size: 28px;
   margin-bottom: 10px;
   margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .menu__title h1 {
+    margin-left: 40px;
+  }
 }
 .menu__title .like-icon {
   position: absolute;
@@ -1010,6 +1052,11 @@ header .bg-img {
   color: transparent;
   opacity: 0;
   transition: opacity 500ms;
+}
+@media screen and (min-width: 1024px) {
+  .menu__title .like-icon {
+    right: 40px;
+  }
 }
 .menu__section {
   padding-top: 5px;

@@ -62,7 +62,7 @@ header {
             margin-left: 10px;
             
             @include desktop {
-                margin-left: 125px;
+                margin-left: 40px;
             }
         }
 
@@ -93,7 +93,7 @@ header {
             }
 
             @include desktop {
-                right: 100px;
+                right: 40px;
             }
         }
     }
