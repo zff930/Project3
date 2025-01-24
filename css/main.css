@@ -42,7 +42,7 @@ body {
   padding-top: 8px;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .intro__content {
     width: 420px;
   }
@@ -51,7 +51,7 @@ body {
   font-size: 18px;
   text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .intro__content p {
     white-space: nowrap;
   }
@@ -79,18 +79,23 @@ body {
   flex-direction: column;
   row-gap: 10px;
 }
+@media screen and (min-width: 768px) {
+  .procedures {
+    width: 730px;
+    margin: 30px auto 50px auto;
+    row-gap: 30px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .procedures {
-    row-gap: 30px;
     width: 980px;
-    margin: 30px auto 50px auto;
   }
 }
 .procedures h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .procedures h2 {
     margin-bottom: 0px;
   }
@@ -101,9 +106,15 @@ body {
   row-gap: 25px;
   align-items: flex-end;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .procedures__container {
     flex-direction: row;
+    column-gap: 55px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .procedures__container {
     column-gap: 35px;
     justify-content: flex-end;
   }
@@ -122,11 +133,16 @@ body {
   box-shadow: 5px 5px 7px #d6d3d3;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .procedures__container__box {
+    width: 335px;
+    column-gap: 20px;
+    padding-left: 30px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .procedures__container__box {
     width: 300px;
-    column-gap: 20px;
-    padding-left: 30px;
   }
 }
 .procedures__container__box .step {
@@ -162,7 +178,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurants {
     padding-bottom: 30px;
   }
@@ -171,12 +187,17 @@ body {
   font-size: 24px;
   padding-right: 200px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurants h2 {
-    padding-right: 850px;
+    padding-right: 600px;
     padding-bottom: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants h2 {
+    padding-right: 850px;
   }
 }
 .restaurants__wrap {
@@ -184,13 +205,19 @@ body {
   flex-direction: column;
   row-gap: 20px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurants__wrap {
     width: 1000px;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 80px;
+    column-gap: 60px;
     row-gap: 50px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__wrap {
+    column-gap: 80px;
     justify-content: center;
   }
 }

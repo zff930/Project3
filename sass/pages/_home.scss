@@ -46,7 +46,7 @@ body {
         padding-top: 8px;
         padding-bottom: 10px;
 
-        @include desktop {
+        @include tablet {
             width: 420px;
         }
 
@@ -54,7 +54,7 @@ body {
             font-size: 18px;
             text-align: center;
 
-            @include desktop {
+            @include tablet {
                 white-space: nowrap;
             }
         }
@@ -85,17 +85,21 @@ body {
     flex-direction: column;
     row-gap: 10px;
 
-    @include desktop {
-        row-gap: 30px;
-        width: 980px;
+    @include tablet {
+        width: 730px;
         margin: 30px auto 50px auto;
+        row-gap: 30px;
+    }
+
+    @include desktop {
+        width: 980px;
     }
 
     h2 {
         font-size: 24px;
         margin-bottom: 10px;
 
-        @include desktop {
+        @include tablet {
             margin-bottom: 0px;
         }
     }
@@ -106,8 +110,13 @@ body {
         row-gap: 25px;
         align-items: flex-end;
 
-        @include desktop {
+        @include tablet {
             flex-direction: row;
+            column-gap: 55px;
+            flex-wrap: wrap;
+        }
+
+        @include desktop {
             column-gap: 35px;
             justify-content: flex-end;
         }
@@ -126,10 +135,14 @@ body {
             box-shadow: 5px 5px 7px #d6d3d3;
             position: relative;
 
-            @include desktop {
-                width: 300px;
+            @include tablet {
+                width: 335px;
                 column-gap: 20px;
                 padding-left: 30px;
+            }
+
+            @include desktop {
+                width: 300px;
             }
 
             .step {
@@ -171,7 +184,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    @include desktop {
+    @include tablet {
         padding-bottom: 30px;
     }
 
@@ -179,11 +192,15 @@ body {
         font-size: 24px;
         padding-right: 200px;
 
-        @include desktop {
-            padding-right: 850px;
+        @include tablet {
+            padding-right: 600px;
             padding-bottom: 30px;
             margin-top: 0px;
             margin-bottom: 0px;
+        }
+
+        @include desktop {
+            padding-right: 850px;
         }
     }
 
@@ -192,12 +209,17 @@ body {
         flex-direction: column;
         row-gap: 20px;
 
-        @include desktop {
+        @include tablet {
             width: 1000px;
             flex-direction: row;
             flex-wrap: wrap;
-            column-gap: 80px;
+            column-gap: 60px;
             row-gap: 50px;
+            justify-content: center;
+        }
+
+        @include desktop {
+            column-gap: 80px;
             justify-content: center;
         }
 
