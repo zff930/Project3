@@ -395,7 +395,7 @@ header .bg-img {
   height: 270px;
   object-fit: cover;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   header .bg-img {
     object-position: 50% 65%;
   }
@@ -408,10 +408,16 @@ header .bg-img {
   border-radius: 3em 3em 0 0;
   padding: 15px 10px 50px 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu {
     margin-left: 150px;
     margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
     padding-left: 150px;
     padding-right: 150px;
   }
@@ -605,7 +611,7 @@ header .bg-img {
   height: 270px;
   object-fit: cover;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   header .bg-img {
     object-position: 50% 65%;
   }
@@ -616,10 +622,16 @@ header .bg-img {
   border-radius: 3em 3em 0 0;
   padding: 15px 10px 50px 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu {
     margin-left: 150px;
     margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
     padding-left: 150px;
     padding-right: 150px;
   }
@@ -813,7 +825,7 @@ header .bg-img {
   height: 270px;
   object-fit: cover;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   header .bg-img {
     object-position: 50% 65%;
   }
@@ -824,10 +836,16 @@ header .bg-img {
   border-radius: 3em 3em 0 0;
   padding: 15px 10px 50px 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu {
     margin-left: 150px;
     margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
     padding-left: 150px;
     padding-right: 150px;
   }
@@ -1024,7 +1042,7 @@ header .bg-img {
   height: 270px;
   object-fit: cover;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   header .bg-img {
     object-position: 50% 65%;
   }
@@ -1035,10 +1053,16 @@ header .bg-img {
   border-radius: 3em 3em 0 0;
   padding: 15px 10px 50px 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .menu {
     margin-left: 150px;
     margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
     padding-left: 150px;
     padding-right: 150px;
   }

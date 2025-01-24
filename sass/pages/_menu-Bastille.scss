@@ -31,8 +31,8 @@ header {
         width: 100%;
         height: 270px;
         object-fit: cover;
-
-        @include desktop {
+        
+        @include tablet {
             object-position: 50% 65%;
         }
     }
@@ -45,9 +45,14 @@ header {
     border-radius: 3em 3em 0 0;
     padding: 15px 10px 50px 10px;
 
-    @include desktop {
+    @include tablet {
         margin-left: 150px;
         margin-right: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include desktop {
         padding-left: 150px;
         padding-right: 150px;
     }
