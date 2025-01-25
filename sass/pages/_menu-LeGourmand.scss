@@ -154,7 +154,37 @@ header {
                     right: 20px;
                     bottom: 10px;
                 }
+
+                animation: fadeIn 1s ease-in-out forwards;
+
+                @for $i from 1 through 3 {
+                    &--#{$i} {
+                        animation-delay: 100ms * $i;
+                    }
+                }
+
+                @for $i from 4 through 6 {
+                    &--#{$i} {
+                        animation-delay: 100ms * $i;
+                    }
+                }
+
+                @for $i from 7 through 9 {
+                    &--#{$i} {
+                        animation-delay: 100ms * $i;
+                    }
+                }
             }
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 

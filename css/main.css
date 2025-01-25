@@ -529,6 +529,7 @@ header .bg-img {
   padding: 10px 10px;
   box-shadow: 5px 5px 7px #d6d3d3;
   position: relative;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 .menu__section__container__box .details h3 {
   font-size: 17px;
@@ -547,6 +548,41 @@ header .bg-img {
   position: absolute;
   right: 20px;
   bottom: 10px;
+}
+.menu__section__container__box--1 {
+  animation-delay: 100ms;
+}
+.menu__section__container__box--2 {
+  animation-delay: 200ms;
+}
+.menu__section__container__box--3 {
+  animation-delay: 300ms;
+}
+.menu__section__container__box--4 {
+  animation-delay: 400ms;
+}
+.menu__section__container__box--5 {
+  animation-delay: 500ms;
+}
+.menu__section__container__box--6 {
+  animation-delay: 600ms;
+}
+.menu__section__container__box--7 {
+  animation-delay: 700ms;
+}
+.menu__section__container__box--8 {
+  animation-delay: 800ms;
+}
+.menu__section__container__box--9 {
+  animation-delay: 900ms;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .menu__button {
   font-size: 15px;
@@ -743,6 +779,7 @@ header .bg-img {
   padding: 10px 10px;
   box-shadow: 5px 5px 7px #d6d3d3;
   position: relative;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 .menu__section__container__box .details h3 {
   font-size: 17px;
@@ -761,6 +798,41 @@ header .bg-img {
   position: absolute;
   right: 20px;
   bottom: 10px;
+}
+.menu__section__container__box--1 {
+  animation-delay: 100ms;
+}
+.menu__section__container__box--2 {
+  animation-delay: 200ms;
+}
+.menu__section__container__box--3 {
+  animation-delay: 300ms;
+}
+.menu__section__container__box--4 {
+  animation-delay: 400ms;
+}
+.menu__section__container__box--5 {
+  animation-delay: 500ms;
+}
+.menu__section__container__box--6 {
+  animation-delay: 600ms;
+}
+.menu__section__container__box--7 {
+  animation-delay: 700ms;
+}
+.menu__section__container__box--8 {
+  animation-delay: 800ms;
+}
+.menu__section__container__box--9 {
+  animation-delay: 900ms;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .menu__button {
   font-size: 15px;
@@ -960,6 +1032,7 @@ header .bg-img {
   padding: 10px 10px;
   box-shadow: 5px 5px 7px #d6d3d3;
   position: relative;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 .menu__section__container__box .details h3 {
   font-size: 17px;
@@ -978,6 +1051,36 @@ header .bg-img {
   position: absolute;
   right: 20px;
   bottom: 10px;
+}
+.menu__section__container__box--1 {
+  animation-delay: 100ms;
+}
+.menu__section__container__box--2 {
+  animation-delay: 200ms;
+}
+.menu__section__container__box--3 {
+  animation-delay: 300ms;
+}
+.menu__section__container__box--4 {
+  animation-delay: 400ms;
+}
+.menu__section__container__box--5 {
+  animation-delay: 500ms;
+}
+.menu__section__container__box--6 {
+  animation-delay: 600ms;
+}
+.menu__section__container__box--7 {
+  animation-delay: 700ms;
+}
+.menu__section__container__box--8 {
+  animation-delay: 800ms;
+}
+.menu__section__container__box--9 {
+  animation-delay: 900ms;
+}
+.menu__section__container__box--10 {
+  animation-delay: 1000ms;
 }
 .menu__button {
   font-size: 15px;
@@ -1174,6 +1277,7 @@ header .bg-img {
   padding: 10px 10px;
   box-shadow: 5px 5px 7px #d6d3d3;
   position: relative;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 .menu__section__container__box .details h3 {
   font-size: 17px;
@@ -1192,6 +1296,33 @@ header .bg-img {
   position: absolute;
   right: 20px;
   bottom: 10px;
+}
+.menu__section__container__box--1 {
+  animation-delay: 100ms;
+}
+.menu__section__container__box--2 {
+  animation-delay: 200ms;
+}
+.menu__section__container__box--3 {
+  animation-delay: 300ms;
+}
+.menu__section__container__box--4 {
+  animation-delay: 400ms;
+}
+.menu__section__container__box--5 {
+  animation-delay: 500ms;
+}
+.menu__section__container__box--6 {
+  animation-delay: 600ms;
+}
+.menu__section__container__box--7 {
+  animation-delay: 700ms;
+}
+.menu__section__container__box--8 {
+  animation-delay: 800ms;
+}
+.menu__section__container__box--9 {
+  animation-delay: 900ms;
 }
 .menu__button {
   font-size: 15px;

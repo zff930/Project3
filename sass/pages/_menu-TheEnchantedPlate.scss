@@ -157,6 +157,26 @@ header {
                     right: 20px;
                     bottom: 10px;
                 }
+
+                animation: fadeIn 1s ease-in-out forwards;
+
+                @for $i from 1 through 4 {
+                    &--#{$i} {
+                        animation-delay: 100ms * $i;
+                    }
+                }
+
+                @for $i from 5 through 7 {
+                    &--#{$i} {
+                        animation-delay: 100ms * $i;
+                    }
+                }
+
+                @for $i from 8 through 10 {
+                    &--#{$i} {
+                        animation-delay: 100ms * $i;
+                    }
+                }
             }
         }
     }
