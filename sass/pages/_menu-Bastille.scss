@@ -159,19 +159,7 @@ header {
 
                 animation: fadeIn 1s ease-in-out forwards;
 
-                @for $i from 1 through 3 {
-                    &--#{$i} {
-                        animation-delay: 100ms * $i;
-                    }
-                }
-
-                @for $i from 4 through 6 {
-                    &--#{$i} {
-                        animation-delay: 100ms * $i;
-                    }
-                }
-
-                @for $i from 7 through 9 {
+                @for $i from 1 through 20 {
                     &--#{$i} {
                         animation-delay: 100ms * $i;
                     }
