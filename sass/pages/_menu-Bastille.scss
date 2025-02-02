@@ -128,81 +128,95 @@ header {
             row-gap: 20px;
 
             &__box {
+                width: 440px;
                 background-color: #FEFEFE;
                 border-radius: 1em;
-                padding: 10px 10px;
                 box-shadow: 5px 5px 7px #d6d3d3;
-                position: relative;
-
-                & .details {
-                    & h3 {
-                        font-size: 17px;
-                        margin-top: 0px;
-                        margin-bottom: 0px;
-                    }
-
-                    & p {
-                        font-size: 15px;
-                        font-weight: 300;
-                        margin-top: 5px;
-                        margin-bottom: 0px;
-                    }
-                }
-
-                & .price {
-                    font-size: 15px;
-                    font-weight: 700;
-                    position: absolute;
-                    right: 20px;
-                    bottom: 10px;
-                }
-
                 overflow: hidden;
 
-                .circle-check {
-                    width: 35px;
-                    height: 35px;
-                    border-radius: 50%;
-                    background-color: #FEFEFE;
-                    position: absolute;
-                    top: 15px;
-                    right: -60px;
+                .slider {
+                    width: 503px;
+                    display: flex;
+                    justify-content: space-between;
+                    transition: width 0.5s;
                     
-                    i {
-                        position: absolute;
-                        top: 9px;
-                        left: 9px;
+                    & .details {
+                        flex-grow: 1;
+                        padding: 10px;
+                        & h3 {
+                            font-size: 17px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+
+                        & p {
+                            font-size: 15px;
+                            font-weight: 300;
+                            margin-top: 5px;
+                            margin-bottom: 0px;
+                        }
                     }
 
-                    .check {
-                        color: #99E2D0;
-                        font-size: 20px;
-                        font-weight: 900;
+                    & .price {
+                        font-size: 15px;
+                        font-weight: 700;
+                        padding: 10px;
+                        width: 50px;
                     }
-                }
 
-                &:hover {
-                    .selector {
-                        width: 80px;
+                    .check-box {
+                        width: 63px;
                         height: 63px;
                         border-radius: 0 1em 1em 0;
                         background-color: #99E2D0;
-                        position: absolute;
-                        top: 0;
-                        right: -80px;
-                        animation: slideIn 1.5s forwards;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+
+                        .circle-check {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            background-color: #FEFEFE;
+
+                            // i {
+                            //     position: absolute;
+                            //     top: 9px;
+                            //     left: 9px;
+                            // }
+
+                            .check {
+                                color: #99E2D0;
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
                     }
 
-                    .circle-check {
-                        animation: rotateIn 1.5s 1 forwards;
+                    &:hover {
+                        width: 440px;
+                        
+                        .price {
+                            // animation: slideIn 1.5s forwards;
+                        }
+
+                        .check-box {
+                            // transition: translateX;
+                            // animation: slideIn 1.5s forwards;
+
+                            .circle-check {
+                                // animation: rotateIn 1.5s 1 forwards;
+                            }
+                        }
                     }
                 }
+
 
                 @keyframes rotateIn {
                     0% {
                         transform: translateX(0) rotate(0);
                     }
-        
+
                     100% {
                         transform: translateX(-80px) rotate(360deg);
                     }
@@ -211,22 +225,22 @@ header {
                 @keyframes slideIn {
                     0% {
                         width: 0;
-                        transform: translateX(0);
+                        transform: translateX(80px);
                     }
 
                     100% {
                         width: 80px;
-                        transform: translateX(-80px);
+                        transform: translateX(0);
                     }
                 }
 
-                animation: fadeIn 1s ease-in-out forwards;
+                // animation: fadeIn 1s ease-in-out forwards;
 
-                @for $i from 1 through 20 {
-                    &--#{$i} {
-                        animation-delay: 100ms * $i;
-                    }
-                }
+                // @for $i from 1 through 20 {
+                //     &--#{$i} {
+                //         animation-delay: 100ms * $i;
+                //     }
+                // }
 
             }
         }
@@ -234,7 +248,7 @@ header {
         @keyframes fadeIn {
             0% {
                 opacity: 0;
-                transform: translateY(500px);
+                transform: translateY(20px);
             }
 
             100% {
@@ -242,22 +256,22 @@ header {
                 transform: translateY(0px);
             }
         }
+    }
 
-        &__button {
-            font-size: 15px;
-            color: white;
-            background-image: linear-gradient(0deg, #9356DC, #FF79DA);
-            width: 180px;
-            height: 45px;
-            display: block;
-            border: none;
-            border-radius: 2em;
-            margin: 30px auto;
-            box-shadow: 5px 5px 7px #d6d3d3;
+    &__button {
+        font-size: 15px;
+        color: white;
+        background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+        width: 180px;
+        height: 45px;
+        display: block;
+        border: none;
+        border-radius: 2em;
+        margin: 30px auto;
+        box-shadow: 5px 5px 7px #d6d3d3;
 
-            &:hover {
-                filter: brightness(1.05) drop-shadow(5px 5px 7px #d6d3d3);
-            }
+        &:hover {
+            filter: brightness(1.05) drop-shadow(5px 5px 7px #d6d3d3);
         }
     }
 }

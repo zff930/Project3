@@ -527,63 +527,61 @@ header .bg-img {
   row-gap: 20px;
 }
 .menu__section__container__box {
+  width: 440px;
   background-color: #FEFEFE;
   border-radius: 1em;
-  padding: 10px 10px;
   box-shadow: 5px 5px 7px #d6d3d3;
-  position: relative;
   overflow: hidden;
-  animation: fadeIn 1s ease-in-out forwards;
 }
-.menu__section__container__box .details h3 {
+.menu__section__container__box .slider {
+  width: 503px;
+  display: flex;
+  justify-content: space-between;
+  transition: width 0.5s;
+}
+.menu__section__container__box .slider .details {
+  flex-grow: 1;
+  padding: 10px;
+}
+.menu__section__container__box .slider .details h3 {
   font-size: 17px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.menu__section__container__box .details p {
+.menu__section__container__box .slider .details p {
   font-size: 15px;
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 0px;
 }
-.menu__section__container__box .price {
+.menu__section__container__box .slider .price {
   font-size: 15px;
   font-weight: 700;
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  padding: 10px;
+  width: 50px;
 }
-.menu__section__container__box .circle-check {
+.menu__section__container__box .slider .check-box {
+  width: 63px;
+  height: 63px;
+  border-radius: 0 1em 1em 0;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.menu__section__container__box .slider .check-box .circle-check {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background-color: #FEFEFE;
-  position: absolute;
-  top: 15px;
-  right: -60px;
 }
-.menu__section__container__box .circle-check i {
-  position: absolute;
-  top: 9px;
-  left: 9px;
-}
-.menu__section__container__box .circle-check .check {
+.menu__section__container__box .slider .check-box .circle-check .check {
   color: #99E2D0;
   font-size: 20px;
   font-weight: 900;
 }
-.menu__section__container__box:hover .selector {
-  width: 80px;
-  height: 63px;
-  border-radius: 0 1em 1em 0;
-  background-color: #99E2D0;
-  position: absolute;
-  top: 0;
-  right: -80px;
-  animation: slideIn 1.5s forwards;
-}
-.menu__section__container__box:hover .circle-check {
-  animation: rotateIn 1.5s 1 forwards;
+.menu__section__container__box .slider:hover {
+  width: 440px;
 }
 @keyframes rotateIn {
   0% {
@@ -596,84 +594,24 @@ header .bg-img {
 @keyframes slideIn {
   0% {
     width: 0;
-    transform: translateX(0);
+    transform: translateX(80px);
   }
   100% {
     width: 80px;
-    transform: translateX(-80px);
+    transform: translateX(0);
   }
-}
-.menu__section__container__box--1 {
-  animation-delay: 100ms;
-}
-.menu__section__container__box--2 {
-  animation-delay: 200ms;
-}
-.menu__section__container__box--3 {
-  animation-delay: 300ms;
-}
-.menu__section__container__box--4 {
-  animation-delay: 400ms;
-}
-.menu__section__container__box--5 {
-  animation-delay: 500ms;
-}
-.menu__section__container__box--6 {
-  animation-delay: 600ms;
-}
-.menu__section__container__box--7 {
-  animation-delay: 700ms;
-}
-.menu__section__container__box--8 {
-  animation-delay: 800ms;
-}
-.menu__section__container__box--9 {
-  animation-delay: 900ms;
-}
-.menu__section__container__box--10 {
-  animation-delay: 1000ms;
-}
-.menu__section__container__box--11 {
-  animation-delay: 1100ms;
-}
-.menu__section__container__box--12 {
-  animation-delay: 1200ms;
-}
-.menu__section__container__box--13 {
-  animation-delay: 1300ms;
-}
-.menu__section__container__box--14 {
-  animation-delay: 1400ms;
-}
-.menu__section__container__box--15 {
-  animation-delay: 1500ms;
-}
-.menu__section__container__box--16 {
-  animation-delay: 1600ms;
-}
-.menu__section__container__box--17 {
-  animation-delay: 1700ms;
-}
-.menu__section__container__box--18 {
-  animation-delay: 1800ms;
-}
-.menu__section__container__box--19 {
-  animation-delay: 1900ms;
-}
-.menu__section__container__box--20 {
-  animation-delay: 2000ms;
 }
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(500px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
-.menu__section__button {
+.menu__button {
   font-size: 15px;
   color: white;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -685,7 +623,7 @@ header .bg-img {
   margin: 30px auto;
   box-shadow: 5px 5px 7px #d6d3d3;
 }
-.menu__section__button:hover {
+.menu__button:hover {
   filter: brightness(1.05) drop-shadow(5px 5px 7px #d6d3d3);
 }
 
