@@ -532,6 +532,7 @@ header .bg-img {
   padding: 10px 10px;
   box-shadow: 5px 5px 7px #d6d3d3;
   position: relative;
+  overflow: hidden;
   animation: fadeIn 1s ease-in-out forwards;
 }
 .menu__section__container__box .details h3 {
@@ -551,6 +552,56 @@ header .bg-img {
   position: absolute;
   right: 20px;
   bottom: 10px;
+}
+.menu__section__container__box .circle-check {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FEFEFE;
+  position: absolute;
+  top: 15px;
+  right: -60px;
+}
+.menu__section__container__box .circle-check i {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+.menu__section__container__box .circle-check .check {
+  color: #99E2D0;
+  font-size: 20px;
+  font-weight: 900;
+}
+.menu__section__container__box:hover .selector {
+  width: 80px;
+  height: 63px;
+  border-radius: 0 1em 1em 0;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 0;
+  right: -80px;
+  animation: slideIn 1.5s forwards;
+}
+.menu__section__container__box:hover .circle-check {
+  animation: rotateIn 1.5s 1 forwards;
+}
+@keyframes rotateIn {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  100% {
+    transform: translateX(-80px) rotate(360deg);
+  }
+}
+@keyframes slideIn {
+  0% {
+    width: 0;
+    transform: translateX(0);
+  }
+  100% {
+    width: 80px;
+    transform: translateX(-80px);
+  }
 }
 .menu__section__container__box--1 {
   animation-delay: 100ms;
@@ -615,12 +666,14 @@ header .bg-img {
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateY(500px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
-.menu__button {
+.menu__section__button {
   font-size: 15px;
   color: white;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -632,7 +685,7 @@ header .bg-img {
   margin: 30px auto;
   box-shadow: 5px 5px 7px #d6d3d3;
 }
-.menu__button:hover {
+.menu__section__button:hover {
   filter: brightness(1.05) drop-shadow(5px 5px 7px #d6d3d3);
 }
 
