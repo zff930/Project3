@@ -197,6 +197,13 @@ header {
                         cursor: pointer;
                         width: 100%;
 
+                        .details {
+                            width: 200px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
                         .circle-check {
                             animation: rotateIn 0.5s 1 forwards;
                         }
@@ -227,7 +234,7 @@ header {
                         opacity: 0;
                         transform: translateY(20px);
                     }
-        
+
                     100% {
                         opacity: 1;
                         transform: translateY(0px);
