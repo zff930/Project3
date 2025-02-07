@@ -9,19 +9,19 @@ body {
 
 header {
     .logo {
-        & .logo-img {
+        .logo-img {
             display: block;
             margin: 20px auto 14px auto;
             width: 165px;
             height: 28px;
         }
 
-        & .back-to-home-icon {
+        .back-to-home-icon {
             position: absolute;
             top: 23px;
             left: 20px;
 
-            & .back-to-home {
+            .back-to-home {
                 font-size: 20px;
             }
         }
@@ -60,7 +60,7 @@ header {
     &__title {
         position: relative;
 
-        & h1 {
+        h1 {
             font-family: "Shrikhand", serif;
             font-size: 28px;
             margin-bottom: 10px;
@@ -107,14 +107,14 @@ header {
         padding-top: 5px;
         padding-bottom: 15px;
 
-        & h2 {
+        h2 {
             font-size: 16px;
             font-weight: 400;
             margin-left: 10px;
             margin-bottom: 5px;
         }
 
-        & hr {
+        hr {
             width: 11%;
             border: 1.5px solid #99E2D0;
             margin-top: 0px;
@@ -128,28 +128,29 @@ header {
             row-gap: 20px;
 
             &__box {
-                width: 440px;
+                // width: 440px;
                 background-color: #FEFEFE;
                 border-radius: 1em;
                 box-shadow: 5px 5px 7px #d6d3d3;
                 overflow: hidden;
 
                 .slider {
-                    width: 503px;
+                    width: calc(100% + 63px);
                     display: flex;
                     justify-content: space-between;
                     transition: width 0.5s;
-                    
-                    & .details {
+
+                    .details {
                         flex-grow: 1;
                         padding: 10px;
-                        & h3 {
+
+                        h3 {
                             font-size: 17px;
                             margin-top: 0px;
                             margin-bottom: 0px;
                         }
 
-                        & p {
+                        p {
                             font-size: 15px;
                             font-weight: 300;
                             margin-top: 5px;
@@ -157,11 +158,13 @@ header {
                         }
                     }
 
-                    & .price {
+                    .price {
                         font-size: 15px;
                         font-weight: 700;
                         padding: 10px;
-                        width: 50px;
+                        width: 60px;
+                        display: flex;
+                        align-items: flex-end;
                     }
 
                     .check-box {
@@ -171,19 +174,16 @@ header {
                         background-color: #99E2D0;
                         display: flex;
                         justify-content: center;
-                        align-content: center;
+                        align-items: center;
 
                         .circle-check {
                             width: 35px;
                             height: 35px;
                             border-radius: 50%;
                             background-color: #FEFEFE;
-
-                            // i {
-                            //     position: absolute;
-                            //     top: 9px;
-                            //     left: 9px;
-                            // }
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
 
                             .check {
                                 color: #99E2D0;
@@ -194,19 +194,11 @@ header {
                     }
 
                     &:hover {
-                        width: 440px;
-                        
-                        .price {
-                            // animation: slideIn 1.5s forwards;
-                        }
+                        cursor: pointer;
+                        width: 100%;
 
-                        .check-box {
-                            // transition: translateX;
-                            // animation: slideIn 1.5s forwards;
-
-                            .circle-check {
-                                // animation: rotateIn 1.5s 1 forwards;
-                            }
+                        .circle-check {
+                            animation: rotateIn 0.5s 1 forwards;
                         }
                     }
                 }
@@ -214,46 +206,33 @@ header {
 
                 @keyframes rotateIn {
                     0% {
-                        transform: translateX(0) rotate(0);
+                        transform: rotate(0);
                     }
 
                     100% {
-                        transform: translateX(-80px) rotate(360deg);
+                        transform: rotate(360deg);
                     }
                 }
 
-                @keyframes slideIn {
+                animation: fadeIn 1s ease-in-out forwards;
+
+                @for $i from 1 through 20 {
+                    &--#{$i} {
+                        animation-delay: 100ms * $i;
+                    }
+                }
+
+                @keyframes fadeIn {
                     0% {
-                        width: 0;
-                        transform: translateX(80px);
+                        opacity: 0;
+                        transform: translateY(20px);
                     }
-
+        
                     100% {
-                        width: 80px;
-                        transform: translateX(0);
+                        opacity: 1;
+                        transform: translateY(0px);
                     }
                 }
-
-                // animation: fadeIn 1s ease-in-out forwards;
-
-                // @for $i from 1 through 20 {
-                //     &--#{$i} {
-                //         animation-delay: 100ms * $i;
-                //     }
-                // }
-
-            }
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
             }
         }
     }

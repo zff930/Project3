@@ -527,14 +527,14 @@ header .bg-img {
   row-gap: 20px;
 }
 .menu__section__container__box {
-  width: 440px;
   background-color: #FEFEFE;
   border-radius: 1em;
   box-shadow: 5px 5px 7px #d6d3d3;
   overflow: hidden;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 .menu__section__container__box .slider {
-  width: 503px;
+  width: calc(100% + 63px);
   display: flex;
   justify-content: space-between;
   transition: width 0.5s;
@@ -558,7 +558,9 @@ header .bg-img {
   font-size: 15px;
   font-weight: 700;
   padding: 10px;
-  width: 50px;
+  width: 60px;
+  display: flex;
+  align-items: flex-end;
 }
 .menu__section__container__box .slider .check-box {
   width: 63px;
@@ -567,13 +569,16 @@ header .bg-img {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .menu__section__container__box .slider .check-box .circle-check {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background-color: #FEFEFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu__section__container__box .slider .check-box .circle-check .check {
   color: #99E2D0;
@@ -581,25 +586,79 @@ header .bg-img {
   font-weight: 900;
 }
 .menu__section__container__box .slider:hover {
-  width: 440px;
+  cursor: pointer;
+  width: 100%;
+}
+.menu__section__container__box .slider:hover .circle-check {
+  animation: rotateIn 0.5s 1 forwards;
 }
 @keyframes rotateIn {
   0% {
-    transform: translateX(0) rotate(0);
+    transform: rotate(0);
   }
   100% {
-    transform: translateX(-80px) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-@keyframes slideIn {
-  0% {
-    width: 0;
-    transform: translateX(80px);
-  }
-  100% {
-    width: 80px;
-    transform: translateX(0);
-  }
+.menu__section__container__box--1 {
+  animation-delay: 100ms;
+}
+.menu__section__container__box--2 {
+  animation-delay: 200ms;
+}
+.menu__section__container__box--3 {
+  animation-delay: 300ms;
+}
+.menu__section__container__box--4 {
+  animation-delay: 400ms;
+}
+.menu__section__container__box--5 {
+  animation-delay: 500ms;
+}
+.menu__section__container__box--6 {
+  animation-delay: 600ms;
+}
+.menu__section__container__box--7 {
+  animation-delay: 700ms;
+}
+.menu__section__container__box--8 {
+  animation-delay: 800ms;
+}
+.menu__section__container__box--9 {
+  animation-delay: 900ms;
+}
+.menu__section__container__box--10 {
+  animation-delay: 1000ms;
+}
+.menu__section__container__box--11 {
+  animation-delay: 1100ms;
+}
+.menu__section__container__box--12 {
+  animation-delay: 1200ms;
+}
+.menu__section__container__box--13 {
+  animation-delay: 1300ms;
+}
+.menu__section__container__box--14 {
+  animation-delay: 1400ms;
+}
+.menu__section__container__box--15 {
+  animation-delay: 1500ms;
+}
+.menu__section__container__box--16 {
+  animation-delay: 1600ms;
+}
+.menu__section__container__box--17 {
+  animation-delay: 1700ms;
+}
+.menu__section__container__box--18 {
+  animation-delay: 1800ms;
+}
+.menu__section__container__box--19 {
+  animation-delay: 1900ms;
+}
+.menu__section__container__box--20 {
+  animation-delay: 2000ms;
 }
 @keyframes fadeIn {
   0% {
