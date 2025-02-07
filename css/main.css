@@ -542,6 +542,7 @@ header .bg-img {
 .menu__section__container__box .slider .details {
   flex-grow: 1;
   padding: 10px;
+  white-space: nowrap;
 }
 .menu__section__container__box .slider .details h3 {
   font-size: 17px;
@@ -592,7 +593,6 @@ header .bg-img {
 .menu__section__container__box .slider:hover .details {
   width: 200px;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu__section__container__box .slider:hover .circle-check {
